@@ -1,5 +1,7 @@
 package hy.test;
 
+import java.util.stream.IntStream;
+
 public class Test {
 
     public static void main(String ... args) {
@@ -17,6 +19,15 @@ public class Test {
 
         double double_num = 2.10_12_001;
         System.out.println("double num: " + double_num);
+
+        //获得自己电脑的处理器数量
+        System.out.println(Runtime.getRuntime().availableProcessors());
+
+        IntStream.range(0, "jie mao wan wan".length()).mapToObj("jie mao wan wan"::charAt).forEach(
+          c -> System.out.print(c)
+        );
+        System.out.println();
+        System.out.println(Long.MAX_VALUE/1_000_000);
 
     }
 
