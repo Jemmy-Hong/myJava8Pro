@@ -38,7 +38,8 @@ public class Util {
                 futures.stream()
                         .map(future -> future.join())
                         .collect(Collectors.<T>toList())
-        );*/
+        );
+     */
 
         return CompletableFuture.supplyAsync(() -> futures.stream().
                 map(future -> future.join()).
