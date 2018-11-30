@@ -26,7 +26,7 @@ public class Test {
         IntStream.range(0, "jie mao wan wan".length()).mapToObj("jie mao wan wan"::charAt).forEach(
           c -> System.out.print(c)
         );
-        System.out.println("测试git");
+        System.out.println("test line....");
         System.out.println(Long.MAX_VALUE/1_000_000);
 
     }
