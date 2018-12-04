@@ -1,5 +1,7 @@
 package hy.test;
 
+import java.util.Arrays;
+import java.util.List;
 import java.util.stream.IntStream;
 
 public class Test {
@@ -29,6 +31,13 @@ public class Test {
         System.out.println("test line...");
         System.out.println(Long.MAX_VALUE/1_000_000);
 
+        testList();
+    }
+
+    public static void testList(){
+        List<Integer> nums = Arrays.asList(1,4,9,13);
+        List<Integer> subList = nums.subList(1,nums.size());
+        System.out.println(subList);
     }
 
 }
